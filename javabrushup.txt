@@ -1,0 +1,50 @@
+public class Student1
+  {
+      private String name;   //private data member
+
+      public String getName()      //getter method for name
+        {
+            return name;
+        }
+
+     public void setName(String name)    //setter method for name
+        {
+               this.name=name ; //this is used with instance var
+         }
+}
+
+Hacker 
+public class Student1
+  {
+      private int pin=4689;   //private data member
+      
+      public int getPin()
+        {
+            return pin;
+        }
+
+     public void setPin(int pin)
+        {
+               this.pin=pin ;
+         }
+}
+class Test
+{
+    public static void main(String[] args)
+       {
+             Student1 sobj=new Student1();
+             sobj.setPin(4568);
+             System.out.println(sobj.getPin());
+        }
+}
+public class Hacker
+{
+	public static void main(String...args)
+	{
+		Student1 hack =new Student1();
+		//System.out.println(hack.getPin()); //0 encapsulated ,secure
+
+		System.out.println(hack.pin);
+	}
+
+}
